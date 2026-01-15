@@ -1,0 +1,22 @@
+{
+  "name": "virtual-assistant-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Virtual Assistant Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to GitHub Pages or Netlify'"
+  },
+  "keywords": [
+    "portfolio",
+    "virtual-assistant",
+    "professional",
+    "website"
+  ],
+  "author": "Benson VA",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
