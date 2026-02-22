@@ -1,10 +1,10 @@
-// ── NAV SCROLL STATE ──
+
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
-// ── MOBILE MENU ──
+
 const toggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav__links');
 
@@ -40,7 +40,7 @@ navLinks.addEventListener('click', (e) => {
   if (e.target === navLinks) closeMenu();
 });
 
-// ── SCROLL REVEAL ──
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -52,7 +52,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// ── CONTACT FORM ──
+
 const form = document.getElementById('contactForm');
 const success = document.getElementById('formSuccess');
 
@@ -74,7 +74,7 @@ if (form) {
   });
 }
 
-// ── ACTIVE NAV LINK ON SCROLL ──
+
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav__links a[href^="#"]');
 
@@ -90,7 +90,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// ── CURRENT YEAR ──
+
 const yearEl = document.getElementById('currentYear');
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
