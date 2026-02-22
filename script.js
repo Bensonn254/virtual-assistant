@@ -62,15 +62,29 @@ if (form) {
     const btn = form.querySelector('button[type="submit"]');
     btn.textContent = 'Sending…';
     btn.disabled = true;
-
-    // Simulate send (hook up your backend/Formspree here)
-    setTimeout(() => {
-      form.reset();
+    // Send data to Web3Forms
+    const formData = new FormData(form);
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(async (response) => {
+      if (response.status == 200) {
+        form.reset();
+        success.classList.add('visible');
+        setTimeout(() => success.classList.remove('visible'), 5000);
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      alert("Something went wrong. Please try again later.");
+    })
+    .finally(() => {
       btn.textContent = 'Send Message';
       btn.disabled = false;
-      success.classList.add('visible');
-      setTimeout(() => success.classList.remove('visible'), 5000);
-    }, 1200);
+    });
   });
 }
 
