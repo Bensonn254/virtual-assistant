@@ -1,0 +1,16 @@
+{
+  "name": "Benard - Virtual Assistant",
+  "short_name": "Benard VA",
+  "description": "Professional Virtual Assistant services by Benard.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F5F0",
+  "theme_color": "#C8A96E",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ]
+}

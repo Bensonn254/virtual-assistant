@@ -17,6 +17,7 @@
   "author": "Benson VA",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "sharp": "^0.34.5"
   }
 }

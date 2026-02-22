@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Benson VA – Virtual Assistant">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1F1B16"/>
+      <stop offset="60%"  stop-color="#1A1714"/>
+      <stop offset="100%" stop-color="#0F0D0B"/>
+    </linearGradient>
+
+    <!-- Gold gradient -->
+    <linearGradient id="ogGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E2CC9A"/>
+      <stop offset="50%"  stop-color="#C8A96E"/>
+      <stop offset="100%" stop-color="#A5803E"/>
+    </linearGradient>
+
+    <!-- Gold vertical -->
+    <linearGradient id="ogGoldV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#C8A96E"/>
+      <stop offset="100%" stop-color="rgba(200,169,110,0)"/>
+    </linearGradient>
+
+    <!-- Radial glow left -->
+    <radialGradient id="glowL" cx="20%" cy="55%" r="50%">
+      <stop offset="0%"  stop-color="#C8A96E" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#C8A96E" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Radial glow right -->
+    <radialGradient id="glowR" cx="85%" cy="40%" r="40%">
+      <stop offset="0%"  stop-color="#C8A96E" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#C8A96E" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Marble noise texture -->
+    <filter id="ogMarble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.4 0.2" numOctaves="5" seed="8" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.78
+                                           0 0 0 0 0.67
+                                           0 0 0 0 0.45
+                                           0 0 0 0 0.06" in="noise" result="colorNoise"/>
+      <feBlend in="SourceGraphic" in2="colorNoise" mode="screen"/>
+    </filter>
+
+    <!-- Subtle grain -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" stitchTiles="stitch" result="noisy"/>
+      <feColorMatrix type="saturate" values="0" in="noisy" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blended"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.04"/>
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" in2="blended" operator="over"/>
+    </filter>
+
+    <clipPath id="ogClip">
+      <rect width="1200" height="630"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+
+  <!-- Marble wash layer -->
+  <rect width="1200" height="630" fill="rgba(200,169,110,0.03)" filter="url(#ogMarble)"/>
+
+  <!-- Atmospheric glow blobs -->
+  <rect width="1200" height="630" fill="url(#glowL)"/>
+  <rect width="1200" height="630" fill="url(#glowR)"/>
+
+  <!-- Left gold accent bar -->
+  <rect x="80" y="80" width="1.5" height="470" fill="url(#ogGoldV)"/>
+
+  <!-- Right gold accent bar -->
+  <rect x="1120" y="80" width="1.5" height="470" fill="url(#ogGoldV)"/>
+
+  <!-- Top horizontal rule -->
+  <line x1="80" y1="80" x2="540" y2="80" stroke="rgba(200,169,110,0.3)" stroke-width="0.8"/>
+  <text x="600" y="86" font-family="Georgia, serif" font-size="14" fill="#C8A96E" text-anchor="middle" opacity="0.7">✦</text>
+  <line x1="660" y1="80" x2="1120" y2="80" stroke="rgba(200,169,110,0.3)" stroke-width="0.8"/>
+
+  <!-- Bottom horizontal rule -->
+  <line x1="80" y1="550" x2="540" y2="550" stroke="rgba(200,169,110,0.3)" stroke-width="0.8"/>
+  <text x="600" y="556" font-family="Georgia, serif" font-size="14" fill="#C8A96E" text-anchor="middle" opacity="0.7">✦</text>
+  <line x1="660" y1="550" x2="1120" y2="550" stroke="rgba(200,169,110,0.3)" stroke-width="0.8"/>
+
+  <!-- EYEBROW LABEL -->
+  <text
+    x="600" y="180"
+    font-family="'DM Sans', system-ui, sans-serif"
+    font-size="13"
+    font-weight="400"
+    fill="#C8A96E"
+    text-anchor="middle"
+    letter-spacing="6"
+  >VIRTUAL ASSISTANT</text>
+
+  <!-- Thin rule under eyebrow -->
+  <line x1="520" y1="196" x2="588" y2="196" stroke="rgba(200,169,110,0.35)" stroke-width="0.7"/>
+  <line x1="612" y1="196" x2="680" y2="196" stroke="rgba(200,169,110,0.35)" stroke-width="0.7"/>
+
+  <!-- MAIN NAME -->
+  <text
+    x="600" y="330"
+    font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+    font-size="148"
+    font-weight="300"
+    fill="#F8F5F0"
+    text-anchor="middle"
+    letter-spacing="18"
+    opacity="0.97"
+  >BENARD</text>
+
+  <!-- Mid rule with ornaments -->
+  <line x1="120" y1="368" x2="440" y2="368" stroke="rgba(200,169,110,0.25)" stroke-width="0.7"/>
+  <text x="600" y="374" font-family="Georgia, serif" font-size="11" fill="#C8A96E" text-anchor="middle" opacity="0.6">— ✦ —</text>
+  <line x1="760" y1="368" x2="1080" y2="368" stroke="rgba(200,169,110,0.25)" stroke-width="0.7"/>
+
+  <!-- TAGLINE -->
+  <text
+    x="600" y="426"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-size="24"
+    font-weight="300"
+    font-style="italic"
+    fill="rgba(248,245,240,0.6)"
+    text-anchor="middle"
+    letter-spacing="1"
+  >Organized. Reliable. Remote-ready.</text>
+
+  <!-- SERVICES ROW -->
+  <text
+    x="600" y="486"
+    font-family="'DM Sans', system-ui, sans-serif"
+    font-size="11"
+    font-weight="400"
+    fill="rgba(200,169,110,0.55)"
+    text-anchor="middle"
+    letter-spacing="4"
+  >ADMIN SUPPORT  ·  RESEARCH  ·  DATA ENTRY  ·  CUSTOMER SUPPORT</text>
+
+  <!-- VA badge bottom right -->
+  <rect x="1024" y="520" width="58" height="26" rx="2" fill="#C8A96E" opacity="0.9"/>
+  <text
+    x="1053" y="538"
+    font-family="'DM Sans', system-ui, sans-serif"
+    font-size="11"
+    font-weight="500"
+    fill="#1A1714"
+    text-anchor="middle"
+    letter-spacing="3"
+  >VA</text>
+
+  <!-- Corner decorative dots -->
+  <circle cx="94"  cy="94"  r="2.5" fill="#C8A96E" opacity="0.4"/>
+  <circle cx="1106" cy="94"  r="2.5" fill="#C8A96E" opacity="0.4"/>
+  <circle cx="94"  cy="536" r="2.5" fill="#C8A96E" opacity="0.4"/>
+  <circle cx="1106" cy="536" r="2.5" fill="#C8A96E" opacity="0.4"/>
+</svg>

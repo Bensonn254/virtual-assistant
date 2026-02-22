@@ -1,398 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benson VA - Virtual Assistant Portfolio</title>
-    <link rel="icon" type="image/png" href="images/icons/VA-logo-1.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PKF222RF');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.googletagmanager.com;">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
-    <!-- End Security Headers -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benard — Virtual Assistant</title>
+  <meta name="description" content="Professional Virtual Assistant services by Benard. I help busy professionals stay organized and ahead—remotely and reliably." />
+  <link rel="canonical" href="https://benardva.com/" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Benard — Virtual Assistant" />
+  <meta property="og:description" content="Professional Virtual Assistant services to help your business thrive." />
+  <meta property="og:image" content="images/og-image.svg" />
+  <meta property="og:url" content="https://benardva.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Benard — Virtual Assistant" />
+  <meta name="twitter:description" content="Professional Virtual Assistant services to help your business thrive." />
+  <meta name="twitter:image" content="images/og-image.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="apple-touch-icon" href="images/favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline';" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Benard",
+    "jobTitle": "Virtual Assistant",
+    "url": "https://benardva.com/",
+    "sameAs": [
+      "https://annotation-portfolio.netlify.app/",
+      "https://bensonn254-portfolio.web.app/"
+    ],
+    "description": "Professional Virtual Assistant providing admin support, research, data entry, and customer support remotely."
+  }
+  </script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKF222RF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">
-                    <img src="images/icons/VA-logo-1.png" alt="Benson VA Logo">
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#tools" class="nav-link">Tools</a></li>
-                    <li><a href="#work-samples" class="nav-link">Case Studies & Deliverables</a></li>
-                
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand">
+        <img src="images/logo.svg" alt="Benard VA Logo" style="height:48px;width:auto;display:block;" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#work-samples">Work</a></li>
+        <li><a href="#contact" class="nav__cta">Hire Me</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__photo-wrap">
+        <div class="hero__photo">
+          <img src="images/portfolio/hero-img.webp" alt="Benard - Virtual Assistant"
+               onerror="this.style.display='none'; this.parentElement.classList.add('hero__photo--placeholder')" />
+          <div class="hero__photo-ring"></div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="hero-intro">Hello, I'm Benson</p>
-                    <h1 class="hero-title">Virtual Assistant | Admin Support | Research</h1>
-                    <p class="hero-description">
-                        I help busy professionals stay organized by handling email, scheduling, data entry, 
-                        and customer support — remotely and reliably.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="assets/Benard_VA_RESUME.pdf" class="btn btn-primary" download>
-                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                            Download CV
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="images/portfolio/hero.png" alt="Benson - Virtual Assistant">
-                        <div class="available-badge">
-                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <circle cx="6" cy="6" r="6" fill="#10B981"/>
-                            </svg>
-                            Available for Remote Work
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="hero__text">
+        <p class="hero__eyebrow">Virtual Assistant</p>
+        <h1 class="hero__name">Benard</h1>
+        <div class="hero__divider"></div>
+        <p class="hero__tagline">I help busy professionals stay <em>organized</em> &amp; <em>ahead</em> - remotely and reliably.</p>
+        <p class="hero__sub">Admin Support &nbsp;·&nbsp; Research &nbsp;·&nbsp; Data Entry &nbsp;·&nbsp; Customer Support</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Let's Work Together</a>
+          <a href="assets/Benard_VA_RESUME.pdf" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Download CV</a>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What I Do</h2>
-                <p class="section-subtitle">Professional services to help your business run smoothly</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Inbox & Email Management</h3>
-                    <p class="service-description">Organize, filter, and respond to emails efficiently to keep your inbox clean.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Calendar Scheduling</h3>
-                    <p class="service-description">Manage appointments, coordinate meetings, and handle scheduling conflicts.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Data Entry & Spreadsheets</h3>
-                    <p class="service-description">Sourced and verified Digital Marketing Agencies in Nairobi, including direct contact person details, verified emails, and service niches. Used for outbound B2B marketing.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Online Research</h3>
-                    <p class="service-description">Comprehensive research on markets, competitors, and industry trends.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Customer Support</h3>
-                    <p class="service-description">Handle customer inquiries, provide support, and maintain satisfaction.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="service-title">Document Formatting</h3>
-                    <p class="service-description">Professional formatting of documents, presentations, and reports.</p>
-                </div>
-            </div>
+        <div class="hero__badge">
+          <span class="badge-dot"></span>Available for Remote Work
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <!-- Tools Section -->
-    <section class="tools" id="tools">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Tools I Use</h2>
-                <p class="section-subtitle">Proficient with industry-standard tools and platforms</p>
-            </div>
-            <div class="tools-grid">
-                <span class="tool-badge">Google Workspace</span>
-                <span class="tool-badge">Microsoft Office</span>
-                <span class="tool-badge">Notion</span>
-                <span class="tool-badge">Trello</span>
-                <span class="tool-badge">Slack</span>
-                <span class="tool-badge">Zoom</span>
-                <span class="tool-badge">WhatsApp Business</span>
-                <span class="tool-badge">Canva</span>
-                <span class="tool-badge">Asana</span>
-                <span class="tool-badge">Calendly</span>
-                <span class="tool-badge">Dropbox</span>
-                <span class="tool-badge">HubSpot</span>
-            </div>
-            <p class="tools-note">Comfortable learning new tools fast.</p>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About Me</div>
+      <div class="section-rule"></div>
+      <div class="about__grid">
+        <div class="about__heading-col">
+          <h2 class="section-title">The person<br /><em>behind the work</em></h2>
         </div>
-    </section>
-
-    <!-- Work Samples Section -->
-    <section class="work-samples" id="work-samples">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Case Studies & Deliverables</h2>
-                <p class="section-subtitle">Examples of projects I've completed for clients</p>
-            </div>
-            <div class="samples-grid">
-                <div class="sample-card">
-                    <div class="sample-header">
-                        <h3 class="sample-title">Meeting Notes & Scheduling</h3>
-                        <div class="badges">
-                            <span class="badge">Google Calendar</span>
-                            <span class="badge">Zoom</span>
-                        </div>
-                    </div>
-                    <ul class="sample-list">
-                        <li>Calendar planning and meeting coordination</li>
-                        <li>Action-item summaries + follow-up reminders</li>
-                        <li>Professional meeting notes format</li>
-                    </ul>
-                    <a href="public/samples/Client Meeting Notes – Weekly Operations Sync.pdf" class="btn btn-outline" target="_blank">View Sample</a>
-                    <p class="confidentiality-note">Confidentiality Note: This sample uses anonymized/dummy data to protect privacy.</p>
-                </div>
-
-                <div class="sample-card">
-                    <div class="sample-header">
-                        <h3 class="sample-title">Data Entry & Reporting</h3>
-                        <div class="badges">
-                            <span class="badge">Google Sheets</span>
-                            <span class="badge">Excel</span>
-                        </div>
-                    </div>
-                    <ul class="sample-list">
-                        <li>Data entry and cleanup in Sheets/Excel</li>
-                        <li>Simple reporting tables + summaries</li>
-                        <li>Organized records for easy tracking</li>
-                    </ul>
-                    <a href="public/samples/Nairobi_Marketing_Agencies_Lead_List.pdf" class="btn btn-outline" target="_blank">View Sample</a>
-                    <p class="confidentiality-note">Confidentiality Note: This sample uses anonymized/dummy data to protect privacy.</p>
-                </div>
-
-                <div class="sample-card">
-                    <div class="sample-header">
-                        <h3 class="sample-title">Customer Support Inbox</h3>
-                        <div class="badges">
-                            <span class="badge">Email Support</span>
-                            <span class="badge">Zendesk</span>
-                        </div>
-                    </div>
-                    <ul class="sample-list">
-                        <li>Categorized incoming requests</li>
-                        <li>Drafted helpful replies and FAQ snippets</li>
-                        <li>Maintained consistent response tone</li>
-                    </ul>
-                    <a href="public/samples/customer-support-inbox-pack.pdf" class="btn btn-outline" target="_blank">View Sample</a>
-                    <p class="confidentiality-note">Confidentiality Note: This sample uses anonymized/dummy data to protect privacy.</p>
-                </div>
-
-                <div class="sample-card">
-                    <div class="sample-header">
-                        <h3 class="sample-title">Data Cleaning & Standardization</h3>
-                        <div class="badges">
-                            <span class="badge">Google Sheets</span>
-                            <span class="badge">Excel</span>
-                        </div>
-                    </div>
-                    <ul class="sample-list">
-                        <li>Transformed messy, unformatted contact list</li>
-                        <li>Standardized data into professional database format</li>
-                        <li>Prepared data ready for CRM upload and integration</li>
-                    </ul>
-                    <a href="public/samples/Data_Cleaning_Standardization_Showcase.pdf" class="btn btn-outline" target="_blank">View Full Case Study</a>
-                    <p class="confidentiality-note">Confidentiality Note: This sample uses anonymized/dummy data to protect privacy.</p>
-                </div>
-            </div>
+        <div class="about__body-col">
+          <p class="about__text">I'm a dedicated Virtual Assistant based in Nairobi, Kenya - helping business owners and busy professionals reclaim their time by taking the operational load off their plates.</p>
+          <p class="about__text">From managing inboxes and coordinating calendars to digging into research and cleaning up data, I bring structure, consistency, and a sharp eye for detail to everything I handle.</p>
+          <div class="about__pillars">
+            <div class="pillar"><span class="pillar__icon">+</span><span>Detail-Oriented</span></div>
+            <div class="pillar"><span class="pillar__icon">+</span><span>Remote-Ready</span></div>
+            <div class="pillar"><span class="pillar__icon">+</span><span>Fast Learner</span></div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
+  <section class="section section--tinted" id="services">
+    <div class="container">
+      <div class="section-label">What I Do</div>
+      <div class="section-rule"></div>
+      <h2 class="section-title section-title--center">Services</h2>
+      <p class="section-subtitle">Professional support to keep your business running smoothly</p>
+      <div class="services__grid">
+        <div class="service-card reveal"><div class="service-card__num">01</div><h3 class="service-card__title">Inbox &amp; Email Management</h3><p class="service-card__body">Organize, filter, and respond to emails efficiently - keeping your inbox clean and your priorities clear.</p></div>
+        <div class="service-card reveal"><div class="service-card__num">02</div><h3 class="service-card__title">Calendar Scheduling</h3><p class="service-card__body">Manage appointments, coordinate meetings, and resolve scheduling conflicts before they become problems.</p></div>
+        <div class="service-card reveal"><div class="service-card__num">03</div><h3 class="service-card__title">Data Entry &amp; Spreadsheets</h3><p class="service-card__body">Accurate data entry, cleanup, and spreadsheet management - structured for easy tracking and reporting.</p></div>
+        <div class="service-card reveal"><div class="service-card__num">04</div><h3 class="service-card__title">Online Research</h3><p class="service-card__body">Comprehensive research on markets, competitors, leads, and industry trends - delivered in clean, usable formats.</p></div>
+        <div class="service-card reveal"><div class="service-card__num">05</div><h3 class="service-card__title">Customer Support</h3><p class="service-card__body">Handle customer inquiries with professionalism and empathy - maintaining a consistent tone and high satisfaction.</p></div>
+        <div class="service-card reveal"><div class="service-card__num">06</div><h3 class="service-card__title">Document Formatting</h3><p class="service-card__body">Professional formatting of documents, presentations, and reports - polished and ready to share.</p></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to work together? Let's connect!</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3 class="contact-info-title">Contact Information</h3>
-                    <p class="contact-info-text">
-                        Available for remote work opportunities. Please use the contact form to get in touch.
-                    </p>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="e.g., John Kamau" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="e.g., john.kamau@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Hello Benson, I'm interested in your virtual assistant services for my business in Nairobi..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                    </form>
-                    <div id="formSuccess" class="form-success" style="display: none;">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <h3>Message Sent!</h3>
-                        <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
-                    </div>
-                </div>
-            </div>
+  <section class="section" id="tools">
+    <div class="container">
+      <div class="section-label">Tools I Use</div>
+      <div class="section-rule"></div>
+      <h2 class="section-title section-title--center">Proficient With</h2>
+      <p class="section-subtitle">Industry-standard platforms - comfortable learning new tools fast</p>
+      <div class="tools__categories">
+        <div class="tools__category reveal">
+          <h4 class="tools__cat-label">Productivity &amp; Communication</h4>
+          <div class="tools__grid">
+            <div class="tool-item"><img src="images/icons/google.svg" width="40" height="40" loading="lazy" alt="Google Workspace" /><span>Google Workspace</span></div>
+            <div class="tool-item"><img src="images/icons/microsoft.svg" width="40" height="40" loading="lazy" alt="Microsoft Office" /><span>Microsoft Office</span></div>
+            <div class="tool-item"><img src="images/icons/notion.svg" width="40" height="40" loading="lazy" alt="Notion" /><span>Notion</span></div>
+            <div class="tool-item"><img src="images/icons/slack.svg" width="40" height="40" loading="lazy" alt="Slack" /><span>Slack</span></div>
+            <div class="tool-item"><img src="images/icons/zoom.svg" width="40" height="40" loading="lazy" alt="Zoom" /><span>Zoom</span></div>
+            <div class="tool-item"><img src="images/icons/whatsapp.svg" width="40" height="40" loading="lazy" alt="WhatsApp Business" /><span>WhatsApp Business</span></div>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="images/icons/VA-logo-1.png" alt="Benson VA Logo">
-                    </div>
-                    <p class="footer-description">
-                        Professional Virtual Assistant services to help your business thrive.
-                    </p>
-                </div>
-                <div class="footer-links-section">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home" class="footer-link">Home</a></li>
-                        <li><a href="#services" class="footer-link">Services</a></li>
-                        <li><a href="#work-samples" class="footer-link">Case Studies & Deliverables</a></li>
-                        <li><a href="#contact" class="footer-link">Contact</a></li>
-                        <li><a href="https://annotation-portfolio.netlify.app/" class="footer-link" target="_blank">Data Annotation</a></li>
-                        <li><a href="https://benson-main-portfolio.netlify.app/" class="footer-link" target="_blank">Web Development</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="social-links">
-                        <a href="mailto:odhiambobenard33@gmail.com" class="social-link" aria-label="Email">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                                <path d="m22 7-10 5L2 7"></path>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/254743052401" class="social-link" target="_blank" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.56c-.15 1.58-.81 5.42-1.15 7.19-.14.75-.42 1-.69 1.03-.58.05-1.03-.38-1.59-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.05-.2s-.15-.04-.21-.02c-.09.03-1.49.95-4.21 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.89-1.26 4.81-2.09 5.76-2.5 2.75-1.44 3.32-1.69 3.71-1.7.08 0 .25.02.36.12.09.08.12.19.13.3-.01.05.01.2-.02.31z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 Benson • Virtual Assistant. All rights reserved.</p>
-            </div>
+        <div class="tools__divider"></div>
+        <div class="tools__category reveal">
+          <h4 class="tools__cat-label">Project Management &amp; CRM</h4>
+          <div class="tools__grid">
+            <div class="tool-item"><img src="images/icons/trello.svg" width="40" height="40" loading="lazy" alt="Trello" /><span>Trello</span></div>
+            <div class="tool-item"><img src="images/icons/asana.svg" width="40" height="40" loading="lazy" alt="Asana" /><span>Asana</span></div>
+            <div class="tool-item"><img src="images/icons/canva.svg" width="40" height="40" loading="lazy" alt="Canva" /><span>Canva</span></div>
+            <div class="tool-item"><img src="images/icons/calendly.svg" width="40" height="40" loading="lazy" alt="Calendly" /><span>Calendly</span></div>
+            <div class="tool-item"><img src="images/icons/dropbox.svg" width="40" height="40" loading="lazy" alt="Dropbox" /><span>Dropbox</span></div>
+            <div class="tool-item"><img src="images/icons/hubspot.svg" width="40" height="40" loading="lazy" alt="HubSpot" /><span>HubSpot</span></div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-    
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/254743052401" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.56c-.15 1.58-.81 5.42-1.15 7.19-.14.75-.42 1-.69 1.03-.58.05-1.03-.38-1.59-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.05-.2s-.15-.04-.21-.02c-.09.03-1.49.95-4.21 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.89-1.26 4.81-2.09 5.76-2.5 2.75-1.44 3.32-1.69 3.71-1.7.08 0 .25.02.36.12.09.08.12.19.13.3-.01.05.01.2-.02.31z"/>
-        </svg>
-    </a>
-    
-    <!-- Floating Email Button -->
-    <a href="mailto:odhiambobenard33@gmail.com" class="email-float" aria-label="Email">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-10 5L2 7"></path>
-        </svg>
-    </a>
+  <section class="section section--tinted" id="work-samples">
+    <div class="container">
+      <div class="section-label">Case Studies &amp; Deliverables</div>
+      <div class="section-rule"></div>
+      <h2 class="section-title section-title--center">Work Samples</h2>
+      <p class="section-subtitle">Real examples of projects completed for clients - anonymized to protect privacy</p>
+      <div class="cases__grid">
+        <div class="case-card reveal">
+          <div class="case-card__header"><span class="case-card__num">Case 01</span><div class="case-card__tags"><span class="tag">Google Calendar</span><span class="tag">Zoom</span></div></div>
+          <h3 class="case-card__title">Meeting Notes &amp; Scheduling</h3>
+          <ul class="case-card__list"><li>Calendar planning and meeting coordination</li><li>Action-item summaries + follow-up reminders</li><li>Professional meeting notes format</li></ul>
+          <div class="case-card__footer"><a href="public/samples/Client Meeting Notes - Weekly Operations Sync.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Sample</a><p class="case-card__note">Anonymized/dummy data used</p></div>
+        </div>
+        <div class="case-card reveal">
+          <div class="case-card__header"><span class="case-card__num">Case 02</span><div class="case-card__tags"><span class="tag">Google Sheets</span><span class="tag">Excel</span></div></div>
+          <h3 class="case-card__title">Data Entry &amp; Reporting</h3>
+          <ul class="case-card__list"><li>Data entry and cleanup in Sheets/Excel</li><li>Simple reporting tables + summaries</li><li>Organized records for easy tracking</li></ul>
+          <div class="case-card__footer"><a href="public/samples/Nairobi_Marketing_Agencies_Lead_List.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Sample</a><p class="case-card__note">Anonymized/dummy data used</p></div>
+        </div>
+        <div class="case-card reveal">
+          <div class="case-card__header"><span class="case-card__num">Case 03</span><div class="case-card__tags"><span class="tag">Email Support</span><span class="tag">Zendesk</span></div></div>
+          <h3 class="case-card__title">Customer Support Inbox</h3>
+          <ul class="case-card__list"><li>Categorized and prioritized incoming requests</li><li>Drafted helpful replies and FAQ snippets</li><li>Maintained consistent response tone</li></ul>
+          <div class="case-card__footer"><a href="public/samples/customer-support-inbox-pack.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Sample</a><p class="case-card__note">Anonymized/dummy data used</p></div>
+        </div>
+        <div class="case-card reveal">
+          <div class="case-card__header"><span class="case-card__num">Case 04</span><div class="case-card__tags"><span class="tag">Google Sheets</span><span class="tag">Excel</span></div></div>
+          <h3 class="case-card__title">Data Cleaning &amp; Standardization</h3>
+          <ul class="case-card__list"><li>Transformed messy, unformatted contact lists</li><li>Standardized into professional database format</li><li>Prepared data ready for CRM upload</li></ul>
+          <div class="case-card__footer"><a href="public/samples/Data_Cleaning_Standardization_Showcase.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View Full Case Study</a><p class="case-card__note">Anonymized/dummy data used</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <h2 class="cta-band__headline">Let's scale up<br/><em>your business.</em></h2>
+      <a href="#contact" class="btn btn--primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <div class="section-rule"></div>
+      <h2 class="section-title section-title--center">Ready to work together?</h2>
+      <p class="section-subtitle">Send me a message and I'll get back to you within 24 hours</p>
+      <div class="contact__wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Benson Odhiambo" required /></div>
+            <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="example@gmail.com" required /></div>
+          </div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <div class="form-success" id="formSuccess"><span>+</span> Thank you! I'll be in touch within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home"><img src="images/logo-light.svg" alt="Benard VA Logo" class="footer__logo" style="height: 48px; width: auto; display: block;" /></a>
+        <p>Professional Virtual Assistant services to help your business thrive.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work-samples">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__other">
+        <p>Other portfolios</p>
+        <a href="https://annotation-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Data Annotation</a>
+        <a href="https://bensonn254-portfolio.web.app/" target="_blank" rel="noopener noreferrer">Web Development</a>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>&copy; <span id="currentYear"></span> Benard - Virtual Assistant</p></div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
