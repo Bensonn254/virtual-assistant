@@ -10,6 +10,7 @@ const navLinks = document.querySelector('.nav__links');
 
 function openMenu() {
   navLinks.classList.add('open');
+  nav.classList.add('menu-open');
   document.body.style.overflow = 'hidden'; // prevent scroll behind overlay
   const spans = toggle.querySelectorAll('span');
   spans[0].style.transform = 'translateY(6.5px) rotate(45deg)';
@@ -19,6 +20,7 @@ function openMenu() {
 
 function closeMenu() {
   navLinks.classList.remove('open');
+  nav.classList.remove('menu-open');
   document.body.style.overflow = '';
   const spans = toggle.querySelectorAll('span');
   spans[0].style.transform = '';

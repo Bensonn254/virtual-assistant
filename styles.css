@@ -171,7 +171,7 @@ ul { list-style: none; }
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 1000;
+  z-index: 9000;
   padding: 22px 0;
   transition: all 0.4s var(--ease-out);
 }
@@ -195,6 +195,20 @@ ul { list-style: none; }
 }
 .nav.scrolled .nav__toggle span {
   background: var(--cream);
+}
+
+/* Override nav text and toggle colors when mobile menu is open, to contrast with the cream overlay */
+.nav.menu-open .nav__links a {
+  color: var(--mid) !important;
+}
+.nav.menu-open .nav__links a:hover {
+  color: var(--gold-dark) !important;
+}
+.nav.menu-open .nav__cta {
+  color: var(--gold-dark) !important;
+}
+.nav.menu-open .nav__toggle span {
+  background: var(--ink) !important;
 }
 
 .nav__inner {
@@ -1004,11 +1018,11 @@ ul { list-style: none; }
     justify-content: center;
     align-items: center;
     gap: 36px;
-    z-index: 999;
+    z-index: 8999;
   }
   .nav__links.open { display: flex; }
   .nav__links a { font-size: 14px; letter-spacing: 0.2em; }
-  .nav__toggle { display: flex; z-index: 1001; position: relative; }
+  .nav__toggle { display: flex; z-index: 9001; position: relative; }
 
   /* Hero */
   .hero {
